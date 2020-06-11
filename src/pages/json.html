@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p></p>
+    <script>
+        let jsonArr = [{
+            userId: '01001',
+            userName: '张三疯', 
+            userSex: '男'
+        },
+        {
+            userId: '01002',
+            userName: '李四',
+            userSex: '女'
+        },
+        ]
+        let arr = JSON.stringify(jsonArr);
+        console.log(arr);
+        for( let i = 0 , i < arr.length, i++) {
+
+            for( let va in item){
+                $('p').html(item[va]);
+            }
+            
+        };
+        
+    </script>
+</body>
+
+</html>

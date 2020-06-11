@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    color:#666;
+    font-family: '黑体';
+    
+}
+ul{
+    list-style:none;
+}
+a{
+    text-decoration: none;
+    color:#666;
+}
+
+.content_box{
+    width:630px;
+    margin:0 auto;
+    padding-top:50px;
+}
+.content_box h1{
+    color:#000;
+    line-height: 40px;
+    border-bottom:1px #ccc solid;
+    font-weight: 600;
+}
+.content_box h1 span{
+    font-size: 20px;
+    font-weight: 400;
+    margin:0px 10px;
+}
+.content_box .input-box{
+    width:100%;
+}
+.content_box .input-box label{
+    display: flex;
+    margin:20px 0px;
+}
+.content_box .input-box label div{
+    width:100px;
+    height:40px;
+    padding:0px 10px;
+    background:#e5e5e5;
+    border:2px #ccc solid;
+    border-radius: 4px 0px 0px 4px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align-last:justify;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    line-height:40px;
+    box-sizing: border-box;
+}
+.content_box .input-box label input{
+    font-size: 16px;
+    flex:1;
+    border:2px solid #e5e5e5;
+    border-left: none;
+    border-radius:0px 4px 4px 0px;
+    box-sizing: border-box;
+    padding:0px 10px;
+}
+.content_box .input-box button{
+    width:150px;
+    height:40px;
+    font-size: 16px;
+    text-align:center;
+    border:2px solid #ccc;
+    margin-right:10px;
+    border-radius:4px;
+    cursor: pointer;
+}
+.content_box .input-box button:hover{
+    background:rgba(51, 122, 183);
+    border-color: rgb(42, 117, 182);
+    color:#fff;
+}
+/* 内容生成页面 */
+#table_box{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top:100px;
+}
+#table_box tr{
+    border-top:1px solid #ccc;
+    height: 50px;
+}
+#table_box tr td{
+    text-align: left;
+    padding:0px 5px;
+    box-sizing: border-box;
+}
+#table_box tr td:last-child{
+    width:110px;
+}
+#table_box thead{
+
+}
+#table_box thead tr{
+    background:#f5f5f5;
+    color:#000;
+    font-weight: 500;
+}
+#table_box thead tr td{
+    color:#000;
+    font-weight: 600;
+}
+#table_box tbody td button{
+    width:40px;
+    height:25px;
+    border-radius: 4px;;
+}
+#table_box tbody td button:first-child{
+    background:rgb(92, 184, 92);
+    color:#fff;
+    text-align: center;
+    line-height: 25px;
+    border:1px solid rgb(92, 184, 92);
+    
+}
+#table_box tbody td button:last-child{
+    background:rgb(212, 62, 57);
+    color:#fff;
+    text-align: center;
+    line-height: 25px;
+    border:1px solid rgb(212, 62, 57);
+    
+}
+#table_box tbody tr:nth-of-type(2n){
+    background:#f5f5f5;
+}
+/* 修改弹窗 */
+.window_box{
+    position: fixed;
+    width:100%;
+    height:100%;
+    background:#00000080;
+    display: none;
+}
+.window_box .content_box{
+    position: absolute;
+    top:50px;
+    left:50%;
+    transform: translateX(-50%);
+    background:#fff;
+    border-radius: 4px;
+    padding:10px;
+    overflow: hidden;
+}
+.window_box .content_box .input-box button{
+    width:auto;
+    padding:0px 10px;
+    float: right;
+    cursor: pointer;
+}

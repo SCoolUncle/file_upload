@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <!-- 修改弹窗 -->
+    <div class="window_box">
+        <div class="content_box second">
+            <h1>请修改信息</h1>
+            <div class="input-box secondinputs">
+                <label>
+                    <div>姓名</div>
+                    <input type="text" placeholder="只能输入数字字母下滑线，且数字不能开头,长度在8-16之间">
+                </label>
+                <label>
+                    <div>联系电话</div>
+                    <input type="text" placeholder="Amount">
+                </label>
+                <label>
+                    <div>学历</div>
+                    <input type="text" placeholder="Amount" >
+                </label>
+                <label>
+                    <div>年龄</div>
+                    <input type="text" placeholder="Amount">
+                </label>
+                <label for="">
+                    <div>期望薪资</div>
+                    <input type="text" placeholder="Amount">
+                </label>
+                <button  class="active saves">保存修改</button>
+                <button class="off">关闭</button>
+            </div>
+        </div>
+    </div>
+    <!-- 表单填写 -->
+    <div class="content_box first">
+        <h1>表单 <span> Subtext for header</span></h1>
+        <div class="input-box">
+            <label>
+                <div>姓名</div>
+                <input type="text" placeholder="只能输入数字字母下滑线，且数字不能开头,长度在8-16之间">
+            </label>
+            <label>
+                <div>联系电话</div>
+                <input type="text" placeholder="输入电话号码">
+            </label>
+            <label>
+                <div>学历</div>
+                <input type="text" placeholder="如果校验正确绿色表示通过">
+            </label>
+            <label>
+                <div>年龄</div>
+                <input type="text" placeholder="Amount">
+            </label>
+            <label for="">
+                <div>期望薪资</div>
+                <input type="text" placeholder="Amount">
+            </label>
+            <button class="active save">保存</button>
+            <button class="reset">重置</button>
+        </div>
+        <!-- 内容生成 -->
+        <table id="table_box">
+            <thead>
+                <tr>
+                    <td>姓名</td>
+                    <td>联系电话</td>
+                    <td>学历</td>
+                    <td>年龄</td>
+                    <td>期望薪资</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>测试</td>
+                    <td>测试</td>
+                    <td>测试</td>
+                    <td>测试</td>
+                    <td>测试</td>
+                    <td>
+                        <button class="setnew">修改</button>
+                        <button class="del">删除</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script>
+
+
+    </script>
+</body>
+
+</html>
